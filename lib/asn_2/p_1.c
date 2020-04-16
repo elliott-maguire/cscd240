@@ -1,13 +1,14 @@
-// problem_1.c
-// ~~~~~~~~~~~
+// p_1.c
+// ~~~~~
 //
 // A.K.A. "find_letters_numbers.c"
 //
 // Contains a function to identify letters
 // and numbers in a given string.
 //
-// Compile with: gcc -o fln problem_1.c
+// Compile with: gcc -o fln p_1.c
 
+#include <stdlib.h>
 #include <stdio.h>
 #include "utils.h"
 
@@ -16,7 +17,8 @@
 // Takes a single-line string input from the
 // user and evaluates each character present
 // as either a letter, digit, or other.
-int main() {
+int main()
+{
     char str[MAX_INPUT];
 
     printf("Type a string to evaluate (max %d characters):\n", MAX_INPUT);
@@ -25,7 +27,8 @@ int main() {
     int len = stringLength(str);
 
     char c;
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len; i++)
+    {
         c = str[i];
 
         if (isLetter(c))
@@ -35,4 +38,6 @@ int main() {
         else
             printf("OTHER: %3c\n", c);
     }
+
+    return EXIT_SUCCESS;
 }
