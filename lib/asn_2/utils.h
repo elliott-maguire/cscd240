@@ -12,62 +12,82 @@
 
 int isLower(char c)
 {
+    int result;
+
     if (c >= 'a' && c <= 'z')
     {
-        return TRUE;
+        result = TRUE;
     }
     else
     {
-        return FALSE;
+        result = FALSE;
     }
+
+    return result;
 }
 
 int isUpper(char c)
 {
+    int result;
+
     if (c >= 'A' && c <= 'Z')
     {
-        return TRUE;
+        result = TRUE;
     }
     else
     {
-        return FALSE;
+        result = FALSE;
     }
+
+    return result;
 }
 
 int isLetter(char c)
 {
+    int result;
+
     if (isLower(c) || isUpper(c))
     {
-        return TRUE;
+        result = TRUE;
     }
     else
     {
-        return FALSE;
+        result = FALSE;
     }
+
+    return result;
 }
 
 int isDigit(char c)
 {
+    int result;
+
     if ((c >= '0' && c <= '9'))
     {
-        return TRUE;
+        result = TRUE;
     }
     else
     {
-        return FALSE;
+        result = FALSE;
     }
+
+    return result;
 }
 
 int isWhitespace(char c)
 {
+    int result;
+
     if (c == ' ')
     {
-        return TRUE;
+        result = TRUE;
     }
     else
     {
-        return FALSE;
+        result = FALSE;
     }
+
+    return result;
 }
 
 int stringLength(const char *str)
