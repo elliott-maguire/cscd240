@@ -50,5 +50,7 @@ int main(int argc, char *argv[])
 
     int cr = close(file);
 
+    free(buffer);
+
     return EXIT_SUCCESS;
 }
